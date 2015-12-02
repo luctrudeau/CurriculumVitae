@@ -1,0 +1,242 @@
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}
+
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\makeatother                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Luc}{Trudeau}
+\title{MSc., Jr. Eng.}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{luc.trudeau@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{luctrudeau}                        % optional, remove / comment the line if not wanted
+\social[twitter]{LT\_Pragmatic}                             % optional, remove / comment the line if not wanted
+\social[github]{luctrudeau}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2011--2016}{Ph.D.}{École de technologie supérieure}{}{\textit{Applied Research in Video Processing}}{}  
+\cvitem{\small{Subject}}{Toward faster motion estimation algorithms through successive elimination.}
+\begin{cvcolumns}
+  \cvcolumn{\normalsize{Summary of the skills acquired during my PH.D.:}}{%
+    \begin{itemize}%
+      \item In depth knowledge of the High Efficiency Video Coding (HEVC) standard.  
+      \item Design and implementation of encoding prototypes in the HEVC reference encoder (C++).
+      \item Writing of patent applications.
+    \end{itemize}%
+  }%
+\end{cvcolumns}
+
+% arguments 3 to 6 can be left empty
+\cventry{2009--2011}{MSc.}{École de technologie supérieure}{}{\textit{Information Technology}}{}
+\cvitem{\small{Subject}}{Detection and concealment of visual degradation resulting from erroneous H.264 video sequences.}
+\begin{cvcolumns}
+  \cvcolumn{\normalsize{Summary of the skills acquired during my Master's:}}{%
+    \begin{itemize}%
+      \item In depth knowledge of video standards MPEG-2, MPEG-4, H.263, H.264. 
+      \item OpenCV and Matlab prototypes that interact with the reference implementation H.264 software decoder (C/C++).
+      \item Analysis and writing of papers for conferences (IEEE).
+      \item Teaching Auxiliary in Software Engineering and Information Technology.
+    \end{itemize}%
+  }%
+\end{cvcolumns}
+\cvitem{2010}{Second place in the 24 Hours of Innovation competition}
+\cvitem{2010}{Second place in the research projects forum hosted at École de technologie supérieure.}
+\cvitem{\small{Special project}}{Extraction and association of vehicles from highway surveillance cameras}
+
+\cventry{2004--2009}{B.Eng.}{École de technologie supérieure}{}{\textit{Software Engineering}}{%
+\begin{itemize}
+\item Member of the autonomous submarine club (SONIA)
+\item Selected for the computer science games 2008
+\item Member of the Software Process Improvement Network (SPIN) for Montreal
+\end{itemize}}
+\cvitem{\small{Term project}}{Building and designing a video game using agile practices.}
+\cvitem{\small{Special project}}{Temporal alignment of speech and text (close caption system for theater and conferences)}
+\cventry{2001--2004}{Tech.}{Cégep Saint-Hyacinthe}{}{\textit{Computer Science Technology}}{Programing Tutor for students, involved in LAN party organization (over 200 gamers)}
+
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+\section{Experience}
+\cventry{2010--2015}{Lecturer}{École de technologie supérieure}{}{}{}
+\begin{cvcolumns}
+  \cvcolumn{\normalsize{Graduate level teaching:}}{%
+    \begin{itemize}%
+      \item Mobile Systems and Applications,%
+      \item Design of Networked Services,%
+      \item Principles and Applications of Software Design.%
+    \end{itemize}%
+  }%
+  \cvcolumn{\normalsize{Undergraduate level teaching:}}{%
+    \begin{itemize}%
+      \item Mobile Systems and Applications,%
+      \item Analysis and Design of Networked Software,%
+      \item Design of Networked Services,%
+      \item Software Architecture,%
+      \item Multimedia Databases.%
+    \end{itemize}%
+  }
+\end{cvcolumns}
+\cvitem{}{Translator for the French version of http2 explained.}
+\cvitem{}{Created course content, lab assignments and demos for: Android, AsyncIO, DASH/HLS, HTTP Long Polling, HTTP2, Frameworks (Netty), Software Architecture vs Software Design, SOAP vs REST.}
+
+%General description no longer than 1--2 lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}
+
+\cventry{2007--2010}{Software Designer}{Ericsson}{Montreal}{}{
+I worked in an Agile team guided by SCRUM methodologies. I was trained in test driven development and continuous integration (techniques I still use today).}
+\begin{cvcolumns}
+  \cvcolumn{\normalsize{I helped design and develop:}}{%
+    \begin{itemize}%
+      \item Developer tools for IMS and IPTV (using the Eclipse plug-in framework). 
+      \item Interactive (AJAX) web applications (JEE, Spring) to control server nodes.
+    \end{itemize}%
+  }%
+\end{cvcolumns}
+\cvitem{}{\emph{I participated in Ericsson innovation competitions.}}
+
+
+\cventry{2005--2007}{Software Developer}{Info-Electronics Systems Inc.}{}{}{%
+I worked in a ISO-9000-3 certified environment, which required an iterative software development life cycle.}
+\begin{cvcolumns}
+  \cvcolumn{\normalsize{I designed, developed and shipped two products:}}{%
+    \begin{itemize}%
+      \item The Verification Validation Reporting and Tracking System (2005)
+      \item The Requirement Management Tracking System (2006)
+    \end{itemize}%
+  }%
+\end{cvcolumns}
+\cvitem{}{Both were J2EE web applications based on core J2EE patterns, they used PostgreSQL databases and ran on JBoss servers. We actually had to make our own HTML/Javascript widget API. Because none existed back then.}
+
+
+\cventry{2004--2004}{Software Developer (intern)}{National Research Council Canada Industrial Materials Institute}{}{}{
+I worked on 3D visualization tools for the polymer injection molding process.
+}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+
+\cvitemwithcomment{French}{native language}{}
+\cvitemwithcomment{English}{fluent (speaking, reading, writing)}{}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+% \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Patents}
+\cvitem{}{L. Trudeau, S. Coulombe and C. Desrosiers, "Method and system for adaptive rate-constrained search ordering," provisional patent application US 62/109,123, January 2015.}
+\cvitem{}{L. Trudeau, S. Coulombe and C. Desrosiers, "Method and system for rate-constrained search ordering," patent application US 14/609,324, January 2015.}
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
